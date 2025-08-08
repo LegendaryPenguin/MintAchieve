@@ -1,0 +1,1 @@
+export async function sha256Hex(input:ArrayBuffer|string){let data:ArrayBuffer;if(typeof input==='string'){data=new TextEncoder().encode(input);}else{data=input;}const h=await crypto.subtle.digest('SHA-256',data);return '0x'+Array.from(new Uint8Array(h)).map(b=>b.toString(16).padStart(2,'0')).join('');}

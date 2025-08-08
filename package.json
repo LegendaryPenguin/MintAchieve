@@ -1,0 +1,29 @@
+{
+  "name": "proofmint",
+  "private": true,
+  "version": "1.0.1",
+  "scripts": {
+    "dev": "next dev -p 3010",
+    "build": "next build",
+    "start": "next start -p 3010",
+    "deploy:sepolia": "hardhat run --config hardhat.config.cjs scripts/deploy.js --network baseSepolia",
+    "deploy:mainnet": "hardhat run --config hardhat.config.cjs scripts/deploy.js --network base"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^0.36.4",
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "^5.5.3",
+    "viem": "^2.9.9",
+    "wagmi": "^2.12.5"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "dotenv": "^17.2.1",
+    "hardhat": "^2.22.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}

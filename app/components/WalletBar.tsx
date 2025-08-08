@@ -1,0 +1,1 @@
+'use client';import { Wallet, ConnectWallet, WalletDropdown } from '@coinbase/onchainkit/wallet';export default function WalletBar(){return(<Wallet><ConnectWallet className='pill'/><WalletDropdown/></Wallet>);}
