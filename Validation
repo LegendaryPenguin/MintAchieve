@@ -1,5 +1,7 @@
 # ProofMint — Gasless "Proof of Accomplishment" NFTs on Base (Pinata)
 
+## What this solves
+
 ## Quickstart
 ```bash
 npm install
